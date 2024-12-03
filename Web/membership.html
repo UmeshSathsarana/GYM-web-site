@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Membership Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Header Section with Hero Image -->
+<header class="membership-header" style=" background: url(https://cdn.pixabay.com/photo/2017/01/16/15/28/boxer-1984344_1280.jpg); text-align: center; padding: 50px; color: white;">
+    <h1>Choose Your FitZone Membership</h1>
+    <p>Find the plan that suits your fitness journey</p>
+    <a href="#membership-plans" class="cta-button" style="color: white; background-color: #555; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Join Now</a>
+</header>
+
+<!-- Membership Options Section -->
+<section id="membership-plans" class="plans-section" style="display: flex; justify-content: space-around; padding: 50px;">
+    <div class="plan-card" style="text-align: center; border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 30%;">
+        <h3>Basic Plan</h3>
+        <p class="price" style="font-size: 24px; font-weight: bold;">$50 / month</p>
+        <ul class="features" style="list-style-type: none; padding: 0;">
+            <li>Access to cardio and weights</li>
+            <li>One group class per week</li>
+            <li>Free consultation</li>
+        </ul>
+        <button class="signup-button" onclick="window.location.href='register.html?plan=basic'">Sign Up</button>
+    </div>
+    <div class="plan-card" style="text-align: center; border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 30%;">
+        <h3>Standard Plan</h3>
+        <p class="price" style="font-size: 24px; font-weight: bold;">$80 / month</p>
+        <ul class="features" style="list-style-type: none; padding: 0;">
+            <li>All Basic Plan benefits</li>
+            <li>Unlimited group classes</li>
+            <li>Discounted personal training</li>
+        </ul>
+        <button class="signup-button" onclick="window.location.href='register.html?plan=basic'">Sign Up</button>
+    </div>
+    <div class="plan-card" style="text-align: center; border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 30%;">
+        <h3>Premium Plan</h3>
+        <p class="price" style="font-size: 24px; font-weight: bold;">$120 / month</p>
+        <ul class="features" style="list-style-type: none; padding: 0;">
+            <li>All Standard Plan benefits</li>
+            <li>One-on-one personal training sessions</li>
+            <li>Nutrition counseling</li>
+        </ul>
+        <button class="signup-button" onclick="window.location.href='register.html?plan=basic'">Sign Up</button>
+    </div>
+</section>
+
+<!-- Detailed Benefits Section -->
+<section class="benefits-section" style="padding: 40px; text-align: center;">
+    <h2>Why Join FitZone?</h2>
+    <div class="benefits-list" style="display: flex; justify-content: space-around; padding-top: 20px;">
+        <div class="benefit-item">
+            <i class="icon clock-icon" style="font-size: 24px;">⏰</i>
+            <p>24/7 Access</p>
+        </div>
+        <div class="benefit-item">
+            <i class="icon trainer-icon" style="font-size: 24px;">🏋️</i>
+            <p>Certified Trainers</p>
+        </div>
+        <div class="benefit-item">
+            <i class="icon group-icon" style="font-size: 24px;">💪</i>
+            <p>Group Classes & Personal Training</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section" style="background-color: #f0f0f0; padding: 50px; text-align: center;">
+    <h2>What Our Members Say</h2>
+    <div class="testimonial" style="margin: 20px;">
+        <p>"FitZone has been a game-changer for my health. The trainers are amazing!" - Sarah L.</p>
+    </div>
+    <div class="testimonial" style="margin: 20px;">
+        <p>"The facilities are top-notch and the classes are fun. Highly recommend!" - Mike P.</p>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section" style="padding: 30px; text-align: center;">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item" style="margin: 10px 0;">
+        <h3>What happens if I need to cancel my membership?</h3>
+        <p>We offer flexible cancellation options. Contact us for more details.</p>
+    </div>
+    <div class="faq-item" style="margin: 10px 0;">
+        <h3>Can I upgrade my membership at any time?</h3>
+        <p>Yes! Members can upgrade to a higher plan anytime they wish.</p>
+    </div>
+</section>
+
+<!-- Final Call to Action -->
+<section class="cta-section" style="text-align: center; padding: 40px;">
+    <p>Ready to start your fitness journey with FitZone?</p>
+    <a href="#signup-form" class="cta-button" style="color: white; background-color: #555; padding: 10px 20px; border-radius: 5px; text-decoration: none;">Become a Member Today</a>
+</section>
+</body>
+</html>

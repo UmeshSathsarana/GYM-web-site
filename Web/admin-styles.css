@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Dashboard header styles */
+h2 {
+    color: #1a237e;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #1a237e;
+}
+
+/* Welcome message */
+p {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* Section headers */
+h3 {
+    color: #283593;
+    font-size: 1.8rem;
+    margin: 25px 0 15px 0;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+th {
+    background: #283593;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background: #f8f9ff;
+    transition: background 0.3s ease;
+}
+
+/* Logout link */
+a {
+    display: inline-block;
+    background: #d32f2f;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(211, 47, 47, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Section */
+.membership-header {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 70px 20px;
+    color: white;
+}
+
+.membership-header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.membership-header p {
+    font-size: 18px;
+}
+
+.cta-button {
+    color: white;
+    background-color: #555;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Membership Plans Section */
+.plans-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.plan-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    background-color: white;
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-card .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #666;
+}
+
+.features li {
+    margin: 5px 0;
+}
+
+.signup-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #555;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.benefits-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.benefit-item {
+    text-align: center;
+    width: 20%;
+    color: #666;
+}
+
+.benefit-item i {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 16px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin: 10px 0;
+    color: #666;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Final Call to Action */
+.cta-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cta-section .cta-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #555;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-section .cta-button:hover {
+    background-color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .plans-section, .benefits-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-card, .benefit-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .cta-section p {
+        font-size: 18px;
+    }
+}

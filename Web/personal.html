@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Training at FitZone Fitness Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2980b9, #8e44ad);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .goals-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .goal-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .goal-card h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        .goal-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .session-structure {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .session-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .session-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .session-details {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .session-details li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .session-details li::before {
+            content: "→";
+            color: #3498db;
+            position: absolute;
+            left: -1.5rem;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #3498db;
+        }
+
+        .benefit-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .goals-list,
+            .session-structure,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1>Personal Training</h1>
+            <p>Customized fitness experiences for targeted results</p>
+        </header>
+
+        <section class="section">
+            <h2>Goals of Personal Training</h2>
+            <ul class="goals-list">
+                <li class="goal-card">
+                    <h3>Achieve Specific Fitness Objectives</h3>
+                    <p>Support clients in reaching personal goals like weight loss, muscle gain, or improved endurance.</p>
+                </li>
+                <!-- <li class="goal-card">
+                    <h3>Increase Accountability and Motivation</h3>
+                    <p>Provide regular guidance, encouragement, and accountability to help clients stay on track.</p>
+                </li>
+                <li class="goal-card">
+                    <h3>Improve Exercise Technique and Safety</h3>
+                    <p>Ensure exercises are performed with correct form to maximize effectiveness and prevent injuries.</p>
+                </li>
+                <li class="goal-card">
+                    <h3>Develop a Sustainable Fitness Routine</h3>
+                    <p>Establish a personalized, enjoyable workout plan that can be maintained over time for lasting results.</p>
+                </li> -->
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Example Personal Training Session</h2>
+            <div class="session-structure">
+                <div class="session-card">
+                    <h3>Warm-Up</h3>
+                    <ul class="session-details">
+                        <li>Dynamic stretches and light cardio (e.g., 5 minutes on the treadmill)</li>
+                    </ul>
+                    <p>Goal: Prepare muscles and joints for the workout, reducing injury risk.</p>
+                </div>
+                <div class="session-card">
+                    <h3>Strength and Resistance Training</h3>
+                    <ul class="session-details">
+                        <li>Deadlifts, tailored to the client's strength level</li>
+                        <li>4 sets of 8 reps</li>
+                    </ul>
+                    <p>Goal: Build core and lower body strength, targeting muscle growth and functional strength.</p>
+                </div>
+                <div class="session-card">
+                    <h3>Cardio Interval</h3>
+                    <ul class="session-details">
+                        <li>15 minutes of interval sprints on a stationary bike</li>
+                    </ul>
+                    <p>Goal: Improve cardiovascular health and boost endurance.</p>
+                </div>
+                <div class="session-card">
+                    <h3>Cool Down and Stretch</h3>
+                    <ul class="session-details">
+                        <li>Static stretches focusing on major muscle groups</li>
+                    </ul>
+                    <p>Goal: Aid recovery and flexibility, minimizing post-workout soreness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Benefits of Personal Training</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Faster and More Effective Results</h3>
+                    <p>With a customized plan, clients achieve goals more efficiently than working out alone.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Increased Motivation and Consistency</h3>
+                    <p>Regular sessions provide motivation, helping clients stay consistent and dedicated.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Improved Confidence and Knowledge</h3>
+                    <p>Clients learn proper exercise techniques and training principles, boosting confidence in their abilities.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Enhanced Accountability</h3>
+                    <p>The commitment to meet with a trainer helps clients stay accountable and avoid skipping workouts.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Personalized Support and Adaptability</h3>
+                    <p>Trainers adjust plans based on progress, fitness level, and any physical limitations, ensuring safe and effective workouts.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
